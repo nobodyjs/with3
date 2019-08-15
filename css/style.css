@@ -1,0 +1,152 @@
+/*@media screen and (min-width: 480px) and (max-width: 1200px){*/
+
+/*}*/
+@media only screen and (max-width: 768px) {
+    .container{
+        padding: 0px 15px;
+    }
+
+}
+
+@media only screen and (max-width: 760px){
+    header ul{
+        width: 50%;
+        text-align: right;
+    }
+
+    header ul li{
+        display: block;
+    }
+    .logo{
+        margin-top: 30px;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: inherit;
+    color: inherit;
+    -webkit-font-smoothing: antialiased;
+}
+
+header{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #24282f;
+}
+
+.container{
+    max-width: 1094px;
+    margin: 0 auto;
+}
+
+.logo{
+    float: left;
+}
+.container:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+header ul {
+    float: right;
+}
+header ul li{
+    display: inline-block;
+    margin-left: 52px;
+}
+
+header ul li a{
+    color: #d8d9da;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 11px;
+    padding-bottom: 35px;
+    border-bottom: transparent solid 2px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+header ul li a:hover{
+    border-bottom: #b5a263 solid 2px;
+    transition: 0.3s;
+}
+
+.h1 {
+    background-color: #2a2e35;
+    color: white;
+    padding: 75px 0 90px 117px;
+}
+
+div p {
+    font-size: 11px;
+    max-width: 650px;
+}
+
+header div span {
+    color: white;
+    padding-left: 30px;
+    font-size: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: black;
+    margin-top: 125px;
+
+}
+
+.section_2 h2:after {
+    content: "";
+    height: 2px;
+    width: 61px;
+    background-color: #b5a263;
+    display: block;
+    margin: auto;
+    margin-top: 21px;
+}
+
+.contact_user {
+    float: left;
+    margin-right: 20px;
+}
+
+.contact_user:last-of-type{
+    margin-right: 0;
+}
+
+.section_2:after{
+    clear: both;
+}
+
+.owl-carousel .owl-nav.disabled, .owl-carousel .owl-dots.disabled{
+    display: block;
+}
+
+button {
+    margin-top: 35px;
+    font-size: 13px;
+    padding: 15px 35px 15px 35px;
+    border-radius: 30px;
+}
+
+.button {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+
+.contact_user {
+    float: left;
+    margin-right: 20px;
+}
+
+.contact_user:last-of-type{
+    margin-right: 0;
+}
+
+.section_2:after {
+    clear: both;
+}
+

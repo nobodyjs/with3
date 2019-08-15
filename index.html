@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/https://resources/demos/style.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-queries.css">
+    <script
+            src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $( function() {
+            $( "#dialog" ).dialog({
+                autoOpen: false,
+                show: {
+                    effect: "blind",
+                    duration: 1000
+                },
+                hide: {
+                    effect: "explode",
+                    duration: 1000
+                }
+            });
+
+            $( "#opener" ).on( "click", function() {
+                $( "#dialog" ).dialog( "open" );
+            });
+        } );
+    </script>
+    <script>
+        $(document).ready(function(){
+
+            $('.owl-carousel').owlCarousel({
+                loop:true,
+                margin:0,
+                nav:true,
+                navText: [ ' ', ' ' ],
+
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:1
+                    },
+                    1000:{
+                        items:1
+                    }
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+<header>
+    <div class=container>
+        <a href="#" class="logo"><img src="images/logo.png" alt="logo"></a><span>FAPOR</span>
+        <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">service</a></li>
+            <li><a href="#">portfolio</a></li>
+            <li><a href="#">contacts</a></li>
+        </ul>
+    </div>
+</header>
+<div class="h1">
+    <h1>
+        More About US
+    </h1>
+    <p>
+        We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. Whether you need to create a brand from scratch, including marketing materials and a beautiful.
+    </p>
+</div>
+<section class="section_2">
+<h2>
+    MANAGEMENT
+</h2>
+    <div class="contact_user">
+        <img src="images/1.png" alt="1">
+        <div>
+            Courteney Cox
+            <span>Marketing Manager</span>
+        </div>
+        <div>
+            <a><i></i></a>
+            <a><i></i></a>
+            <a><i></i></a>
+        </div>
+    </div>
+    <div class="contact_user">
+        <img src="images/2.png" alt="2">
+        <div>
+            Matt LeBlanc
+            <span>Finance Manager</span>
+        </div>
+        <div>
+            <a><i></i></a>
+            <a><i></i></a>
+            <a><i></i></a>
+        </div>
+        <div id="dialog" title="Sad js">
+            <img src="images/pepe.png" alt="Pepe">
+        </div>
+        <div class="button">
+            <button id="opener">SHOW ALL</button>
+        </div>
+    </div>
+    <div class="contact_user">
+        <img src="images/3.png" alt="3">
+        <div>
+            David Schwimmer
+            <span>Creative Director</span>
+        </div>
+        <div>
+            <a><i></i></a>
+            <a><i></i></a>
+            <a><i></i></a>
+        </div>
+    </div>
+</section>
+
+
+</body>
+</html>
